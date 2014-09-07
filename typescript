@@ -1,519 +1,0 @@
-Le script a débuté sur ven. 05 sept. 2014 23:41:23 CEST
-October 12, the Discovery.
-
-It was wonderful to find America, but it would have been more wonderful to miss
-it.
-		-- Mark Twain, "Pudd'nhead Wilson's Calendar"
-[37m23:41:23 [32m[[33mjeremux[31m[33m[32m][36m[wmfs][34m$ (B[mls
-[0m[01;34micons[0m  [01;34mscripts[0m  typescript  wmfsrc  wmfsrc~  [01;32mwmfs_start.sh[0m  wmfs_start.sh~  [01;31mwmfs.tgz[0m
-[37m23:41:24 [32m[[33mjeremux[31m[33m[32m][36m[wmfs][34m$ (B[ms[Kcd scripts/
-[37m23:41:28 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mls
-apt_check.sh  battery.sh      conkyrc_bottom~     conkyrc_top   gmail.sh   [0m[01;34mmeteo[0m           todo.sh
-#battery.sh#  conkyrc_bottom  conkyrc_bottom.bak  conkyrc_top~  gmail.sh~  temperature.sh
-[37m23:41:29 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mchmod +x todo.sh temperature.sh battery.sh 
-[37m23:41:40 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[msudo apt-get install acpi
-[sudo] password for jeremux: 
-Lecture des listes de paquets… 0%Lecture des listes de paquets… 100%Lecture des listes de paquets... Fait
-Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances       
-Lecture des informations d'état… 0%  Lecture des informations d'état… 0%Lecture des informations d'état... Fait
-Les NOUVEAUX paquets suivants seront installés :
-  acpi
-0 mis à jour, 1 nouvellement installés, 0 à enlever et 61 non mis à jour.
-Il est nécessaire de prendre 13,8 ko dans les archives.
-Après cette opération, 71,7 ko d'espace disque supplémentaires seront utilisés.
-0% [En cours]             Réception de : 1 http://archive.ubuntu.com/ubuntu/ trusty/universe acpi amd64 1.7-1 [13,8 kB]
-             19% [1 acpi 2 629 B/13,8 kB 19%]                                100% [En cours]               13,8 ko réceptionnés en 0s (51,7 ko/s)
-Sélection du paquet acpi précédemment désélectionné.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 294161 fichiers et répertoires déjà installés.)
-Préparation du décompactage de .../archives/acpi_1.7-1_amd64.deb ...
-Décompactage de acpi (1.7-1) ...
-Traitement déclenché pour  man-db (2.6.7.1-1) ...
-Paramétrage de acpi (1.7-1) ...
-[37m23:41:54 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[msudo apt-get install acpi[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchmod +x todo.sh temperature.sh battery.sh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmeteo/meteo2[K
-meteo2.sh   meteo2.sh~  meteo.sh    meteo.sh~   meteo.xslt  
-[37m23:41:54 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mchmod +x meteo/meteo.sh
-[37m23:42:32 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mchmod +x meteo/meteo.sh2.sh
-[37m23:42:34 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mchmod +x meteo/meteo2.sh[1P.sh[Kchmod +x todo.sh temperature.sh battery.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd scripts/ls[Kcd scripts/ls[Kchmod +x todo.sh temperature.sh battery.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kchmod +x meteo/meteo.sh2.sh[Ksudo apt-get install feh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kw3m xsltproc 
-Lecture des listes de paquets… 0%Lecture des listes de paquets… 100%Lecture des listes de paquets... Fait
-Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances       
-Lecture des informations d'état… 0%  Lecture des informations d'état… 0%Lecture des informations d'état... Fait
-Paquets suggérés :
-  w3m-img w3m-el cmigemo
-Les NOUVEAUX paquets suivants seront installés :
-  w3m xsltproc
-0 mis à jour, 2 nouvellement installés, 0 à enlever et 61 non mis à jour.
-Il est nécessaire de prendre 891 ko dans les archives.
-Après cette opération, 2 548 ko d'espace disque supplémentaires seront utilisés.
-0% [En cours]             Réception de : 1 http://archive.ubuntu.com/ubuntu/ trusty/main w3m amd64 0.5.3-15 [877 kB]
-             0% [1 w3m 1 187 B/877 kB 0%]                            52% [1 w3m 466 kB/877 kB 53%]                             98% [En cours]              Réception de : 2 http://archive.ubuntu.com/ubuntu/ trusty/main xsltproc amd64 1.1.28-2build1 [13,6 kB]
-              99% [2 xsltproc 1 189 B/13,6 kB 9%]                                   100% [En cours]               891 ko réceptionnés en 1s (853 ko/s)
-Sélection du paquet w3m précédemment désélectionné.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 294169 fichiers et répertoires déjà installés.)
-Préparation du décompactage de .../w3m_0.5.3-15_amd64.deb ...
-Décompactage de w3m (0.5.3-15) ...
-Sélection du paquet xsltproc précédemment désélectionné.
-Préparation du décompactage de .../xsltproc_1.1.28-2build1_amd64.deb ...
-Décompactage de xsltproc (1.1.28-2build1) ...
-Traitement déclenché pour  mime-support (3.54ubuntu1) ...
-Traitement déclenché pour  man-db (2.6.7.1-1) ...
-Paramétrage de w3m (0.5.3-15) ...
-Paramétrage de xsltproc (1.1.28-2build1) ...
-[37m23:42:55 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mls
-apt_check.sh  [0m[01;32mbattery.sh[0m      conkyrc_bottom~     conkyrc_top   gmail.sh   [01;34mmeteo[0m           [01;32mtodo.sh[0m
-#battery.sh#  conkyrc_bottom  conkyrc_bottom.bak  conkyrc_top~  gmail.sh~  [01;32mtemperature.sh[0m
-[37m23:43:13 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mvim conkyrc_bottom
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"conkyrc_bottom" 33L, 1518C[>c[1;1Hout_to_console yes
-out_to_x no
-background yes
-update_interval 1
-total_run_times 0
-no_buffers yes
-
-default_color FFFFFF #blanc
-default_shade_color 333333
-default_outline_color black
-
-use_xft yes
-
-color0 EEEEEE #normal
-color1 B3B3B3 #gris
-color2 FDA53C #orange
-color3 E8DD9E #jaune
-color4 A6D4E0 #bleu
-color5 FFA500 #camel[20;151H1,1[10CHaut[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2[2;1H[?12l[?25h[?25l[20;151H3[3;1H[?12l[?25h[?25l[20;151H4[4;1H[?12l[?25h[?25l[20;151H5[5;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;151H7,0-1[7;1H[?12l[?25h[?25l[20;151H8,1  [8;1H[?12l[?25h[?25l[20;151H9[9;1H[?12l[?25h[?25l[20;151H10,1[10;1H[?12l[?25h[?25l[20;152H1,0-1[11;1H[?12l[?25h[?25l[20;152H2,1  [12;1H[?12l[?25h[?25l[20;152H3,0-1[13;1H[?12l[?25h[?25l[20;152H4,1  [14;1H[?12l[?25h[?25l[20;152H5[15;1H[?12l[?25h[?25l[20;152H6[16;1H[?12l[?25h[?25l[20;152H7[17;1H[?12l[?25h[?25l[20;152H8[18;1H[?12l[?25h[?25l[20;152H9[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor6 BDE077 #vert[20;1H[K[20;151H20,1[11C7%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor7 D8ADFF #mauve[20;151H[K[20;151H21,1[10C14%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor8 FF95D1 #rose[20;151H[K[20;151H22,1[10C21%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[20;151H[K[20;151H23,0-1[8C28%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[20;151H[K[20;151H24,1[10C35%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1HTEXT[20;151H[K[20;151H25,1[10C42%[19;1H[?12l[?25h[?25l[1;19r[1;1H[2M[1;20r[18;1H^s[left;\#BBBBBB; ]^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/processeur-image.png] ^s[left;\#BBBBBB; CPU:]^s[left;\#FDA53C; ${cpu}%  ] ^g[left;80;10;${cpu};100[19;1H0;\#333333;\#FDA53C;ckycpu](1;spawn;urxvtc -e htop)\[20;151H[K[20;151H26,1[10C53%[18;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^s[left;\#444444; |]\[20;151H[K[20;151H27,1[10C60%[19;1H[?12l[?25h[?25l[1;19r[1;1H[2M[1;20r[18;1H^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/MemoryModule.png] ^s[left;\#BBBBBB; MEM:]  ^s[left;\#BDE077; $mem ]^s[left;\#444444;/$memmax]^s[left;\#BDE077;  $memm[19;1Hperc% ]^g[left;80;10;$memperc;100;\#333333;\#BDE077;ckymem](1;spawn;urxvtc -e htop)\[20;151H[K[20;151H28,1[10C68%[18;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^s[left;\#444444; |]\[20;151H[K[20;151H29,1[10C75%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/icon-notes.png]^s[left;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/todo.sh }]\[20;151H[K[20;151H30,1[10C81%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/gmail.gif]^s[right;\#FDA53C; ${execi 60 /home/jeremux/.config/wmfs/scripts/gmail.sh }]^s[right;\#BBBBBB; ]\[20;151H[K[20;151H31,1[10C87%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/meteo.png]^s[right;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/meteo/meteo2.sh }]^s[right;\#BBBBBB; ]\[20;151H[K[20;151H32,1[10C93%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/Battery_Half.png]^s[right;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/battery.sh }]\[20;151H[K[20;151H33,1[10CBas[19;1H[?12l[?25h[?25l[20;152H2[18;1H[?12l[?25h[?25l[20;152H3[19;1H[?12l[?25h[?25l[20;152H2[18;1H[?12l[?25h[?25l[20;152H1[17;1H[?12l[?25h[?25l[20;154H2[17;2H[?12l[?25h[?25li[46m[[59C][m[20;154H3[17;3H[?12l[?25h[?25l[[59C][20;154H4[17;4H[?12l[?25h[?25l[20;154H5[17;5H[?12l[?25h[?25l[20;154H6[17;6H[?12l[?25h[?25l[20;154H7[17;7H[?12l[?25h[?25l[20;154H8[17;8H[?12l[?25h[?25l[20;154H9[17;9H[?12l[?25h[?25l[20;154H10[17;10H[?12l[?25h[?25l[20;155H1[17;11H[?12l[?25h[?25l[20;155H2[17;12H[?12l[?25h[?25l[20;155H3[17;13H[?12l[?25h[?25l[20;155H4[17;14H[?12l[?25h[?25l[20;155H5[17;15H[?12l[?25h[?25l[20;155H6[17;16H[?12l[?25h[?25l[20;155H7[17;17H[?12l[?25h[?25l[20;155H8[17;18H[?12l[?25h[?25l[20;155H9[17;19H[?12l[?25h[?25l[20;154H20[17;20H[?12l[?25h[?25l[20;155H1[17;21H[?12l[?25h[?25l[20;155H2[17;22H[?12l[?25h[?25l[20;155H3[17;23H[?12l[?25h[?25l[20;155H4[17;24H[?12l[?25h[?25l[20;155H5[17;25H[?12l[?25h[?25l[20;155H6[17;26H[?12l[?25h[?25l[20;155H7[17;27H[?12l[?25h[?25l[20;155H8[17;28H[?12l[?25h[?25l[20;155H9[17;29H[?12l[?25h[?25l[20;154H30[17;30H[?12l[?25h[?25l[20;155H1[17;31H[?12l[?25h[?25l[20;155H2[17;32H[?12l[?25h[?25l[20;155H3[17;33H[?12l[?25h[?25l[20;155H4[17;34H[?12l[?25h[?25l[20;155H5[17;35H[?12l[?25h[?25l[20;155H6[17;36H[?12l[?25h[?25l[20;155H7[17;37H[?12l[?25h[?25l[20;155H8[17;38H[?12l[?25h[?25l[20;155H9[17;39H[?12l[?25h[?25l[20;154H40[17;40H[?12l[?25h[?25l[20;155H1[17;41H[?12l[?25h[?25l[20;155H2[17;42H[?12l[?25h[?25l[20;155H3[17;43H[?12l[?25h[?25l[20;155H4[17;44H[?12l[?25h[?25l[20;155H5[17;45H[?12l[?25h[?25l[20;155H6[17;46H[?12l[?25h[?25l[20;155H7[17;47H[?12l[?25h[?25l[20;155H8[17;48H[?12l[?25h[?25l[20;155H9[17;49H[?12l[?25h[?25l[20;154H50[17;50H[?12l[?25h[?25l[20;155H1[17;51H[?12l[?25h[?25l[20;155H2[17;52H[?12l[?25h[?25l[20;155H3[17;53H[?12l[?25h[?25l[20;155H4[17;54H[?12l[?25h[?25l[20;155H5[17;55H[?12l[?25h[?25l[20;155H6[17;56H[?12l[?25h[?25l[20;155H7[17;57H[?12l[?25h[?25l[20;155H8[17;58H[?12l[?25h[?25l[20;155H9[17;59H[?12l[?25h[?25l[20;154H60[17;60H[?12l[?25h[?25l[20;155H1[17;61H[?12l[?25h[?25l[20;155H2[17;62H[?12l[?25h[?25l^i[46m[[59C][m[20;155H3[17;63H[?12l[?25h[?25l^i[[59C][20;155H4[17;64H[?12l[?25h[?25l[20;155H5[17;65H[?12l[?25h[?25ls[46m[[72C][m[20;155H6[17;66H[?12l[?25h[?25l[[72C][20;155H7[17;67H[?12l[?25h[?25l[20;155H8[17;68H[?12l[?25h[?25l[20;155H9[17;69H[?12l[?25h[?25l[20;154H70[17;70H[?12l[?25h[?25l[20;155H1[17;71H[?12l[?25h[?25l[20;155H2[17;72H[?12l[?25h[?25l[20;155H3[17;73H[?12l[?25h[?25l[20;155H4[17;74H[?12l[?25h[?25l[20;155H5[17;75H[?12l[?25h[?25l[20;155H6[17;76H[?12l[?25h[?25l[20;155H7[17;77H[?12l[?25h[?25l[20;155H8[17;78H[?12l[?25h[?25l[20;155H9[17;79H[?12l[?25h[?25l[20;154H80[17;80H[?12l[?25h[?25l[20;155H1[17;81H[?12l[?25h[?25l[20;155H2[17;82H[?12l[?25h[?25l[20;155H3[17;83H[?12l[?25h[?25l$[46m{[53C}[m[20;155H4[17;84H[?12l[?25h[?25l{[53C}[20;152H0[16;84H[?12l[?25h[?25l[20;151H29,21[15;21H[?12l[?25h[?25l[20;152H8,84[13;84H[?12l[?25h[?25l[20;152H7,21[12;21H[?12l[?25h[?25l[20;152H8,84[13;84H[?12l[?25h[?25l[20;152H9,21[15;21H[?12l[?25h[?25l[20;151H30,84[16;84H[?12l[?25h[?25l[17;84H[46m{[53C}[m[20;152H1[17;84H[?12l[?25h[?25l{[53C}[20;152H0[16;84H[?12l[?25h[?25l[20;155H5[16;85H[?12l[?25h[?25l[20;155H6[16;86H[?12l[?25h[?25l$[46m{[48C}[m[20;155H7[16;87H[?12l[?25h[?25l{[48C}[20;155H8[16;88H[?12l[?25h[?25l[20;155H9[16;89H[?12l[?25h[?25l[20;154H90[16;90H[?12l[?25h[?25l[20;155H1[16;91H[?12l[?25h[?25l[20;155H2[16;92H[?12l[?25h[?25l[20;155H3[16;93H[?12l[?25h[?25l[20;155H4[16;94H[?12l[?25h[?25l[20;155H5[16;95H[?12l[?25h[?25l[20;155H6[16;96H[?12l[?25h[?25l[20;155H7[16;97H[?12l[?25h[?25l[20;155H8[16;98H[?12l[?25h[?25l[20;155H9[16;99H[?12l[?25h[?25l[20;154H100[16;100H[?12l[?25h[?25l[20;156H1[16;101H[?12l[?25h[?25l[20;156H2[16;102H[?12l[?25h[?25l[20;156H3[16;103H[?12l[?25h[?25l[20;156H4[16;104H[?12l[?25h[?25l[20;156H5[16;105H[?12l[?25h[?25l[20;156H6[16;106H[?12l[?25h[?25l[20;156H7[16;107H[?12l[?25h[?25l[20;156H8[16;108H[?12l[?25h[?25l[20;156H9[16;109H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[20;1H[K[20;1H[?1l>[?12l[?25h[?1049l[37m23:43:49 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mls
-apt_check.sh  [0m[01;32mbattery.sh[0m      conkyrc_bottom~     conkyrc_top   gmail.sh   [01;34mmeteo[0m           [01;32mtodo.sh[0m
-#battery.sh#  conkyrc_bottom  conkyrc_bottom.bak  conkyrc_top~  gmail.sh~  [01;32mtemperature.sh[0m
-[37m23:45:42 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mcd[K[Kvim todo.sh 
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"todo.sh" 5L, 98C[>c[1;1H[34m#d!/bin/sh[m
-[33mcat[m /home/jeremux/Dropbox/wmfs/.todo |[33mwhile read ligne
-do
-[m    [33mecho[m[31m -n [m[33m"[m[35m$ligne[m[31m / [m[33m"
-done[m
-[1m[34m~                                                                                                                                                                       [7;1H~                                                                                                                                                                       [8;1H~                                                                                                                                                                       [9;1H~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [m[20;151H1,1[10CTout[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2[2;1H[?12l[?25h[?25l[20;153H2[2;2H[?12l[?25h[?25l[20;153H3[2;3H[?12l[?25h[?25l[20;153H4[2;4H[?12l[?25h[?25l[20;153H5[2;5H[?12l[?25h[?25l[20;153H6[2;6H[?12l[?25h[?25l[20;153H7[2;7H[?12l[?25h[?25l[20;153H8[2;8H[?12l[?25h[?25l[20;153H9[2;9H[?12l[?25h[?25l[20;153H10[2;10H[?12l[?25h[?25l[20;154H1[2;11H[?12l[?25h[?25l[20;154H2[2;12H[?12l[?25h[?25l[20;154H3[2;13H[?12l[?25h[?25l[20;154H4[2;14H[?12l[?25h[?25l[20;154H5[2;15H[?12l[?25h[?25l[20;154H6[2;16H[?12l[?25h[?25l[20;154H7[2;17H[?12l[?25h[?25l[20;154H8[2;18H[?12l[?25h[?25l[20;154H9[2;19H[?12l[?25h[?25l[20;153H20[2;20H[?12l[?25h[?25l[20;154H1[2;21H[?12l[?25h[?25l[20;154H2[2;22H[?12l[?25h[?25l[20;154H3[2;23H[?12l[?25h[?25l[20;154H4[2;24H[?12l[?25h[?25l[20;154H5[2;25H[?12l[?25h[?25l[20;154H6[2;26H[?12l[?25h[?25l[20;154H7[2;27H[?12l[?25h[?25l[20;154H8[2;28H[?12l[?25h[?25l[20;154H9[2;29H[?12l[?25h[?25l[20;153H30[2;30H[?12l[?25h[?25l[20;154H1[2;31H[?12l[?25h[?25l[20;154H2[2;32H[?12l[?25h[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H2,32[9CTout[2;32H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;54H[K[20;154H1[2;31H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;53H[K[20;154H0[2;30H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;52H[K[20;153H29[2;29H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;51H[K[20;154H8[2;28H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;50H[K[20;154H7[2;27H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;49H[K[20;154H6[2;26H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;48H[K[20;154H5[2;25H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;47H[K[20;154H4[2;24H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;46H[K[20;154H3[2;23H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;45H[K[20;154H2[2;22H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;44H[K[20;154H1[2;21H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;43H[K[20;154H0[2;20H[?12l[?25h[?25l.todo |[33mwhile read ligne[m[2;42H[K[20;153H19[2;19H[?12l[?25h[20;1H[K[2;18H[?25l[20;151H2,18[9CTout[2;18H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"todo.sh" 5L, 85C écrit(s)
-[?1l>[?12l[?25h[?1049l[37m23:46:04 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mcd
-[37m23:46:08 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mvim .todo
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H".todo" [Nouveau fichier][>c[2;1H[1m[34m~                                                                                                                                                                       [3;1H~                                                                                                                                                                       [4;1H~                                                                                                                                                                       [5;1H~                                                                                                                                                                       [6;1H~                                                                                                                                                                       [7;1H~                                                                                                                                                                       [8;1H~                                                                                                                                                                       [9;1H~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [m[20;151H0,0-1[8CTout[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H0,1[10CTout[1;1H[?12l[?25h[?25lt[20;151H1,2[1;2H[?12l[?25h[?25la[20;153H3[1;3H[?12l[?25h[?25lg[20;153H4[1;4H[?12l[?25h[?25le[20;153H5[1;5H[?12l[?25h[?25l[1;4H[K[20;153H4[1;4H[?12l[?25h[?25l[1;3H[K[20;153H3[1;3H[?12l[?25h[?25l[1;2H[K[20;153H2[1;2H[?12l[?25h[?25l[1;1H[K[20;153H1[1;1H[?12l[?25h[?25ls[20;153H2[1;2H[?12l[?25h[?25lt[20;153H3[1;3H[?12l[?25h[?25la[20;153H4[1;4H[?12l[?25h[?25lg[20;153H5[1;5H[?12l[?25h[?25le[20;153H6[1;6H[?12l[?25h[?25l[2;1H[K[20;151H2,1[2;1H[?12l[?25h[?25l[1m[34m~                                                                                                                                                                       [m[20;151H1,6[1;6H[?12l[?25h[20;1H[K[1;5H[?25l[20;151H1,5[10CTout[1;5H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l".todo" [Nouveau] 1L, 6C écrit(s)
-[?1l>[?12l[?25h[?1049l[37m23:46:17 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mmore [K[K[K[K[Kcd -
-/home/jeremux/.config/wmfs/scripts
-[37m23:49:37 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mmore sc[K[K[K[K[K[K[Kvim gmail.sh
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"gmail.sh" [noeol] 6L, 262C[>c[1;1H[34m#!/bin/bash[m
-
-[36mgmail_login[m=jeremux.f
-[36mgmail_password[m=teg9td7gUTOPYXGP
-
-wget [35m-q[m [35m-O[m - https://mail.google.com/a/gmail.com/feed/atom [35m--http-user=${gmail_login}[m@gmail.com [35m--http-password=[m[33m"[m[35m${gmail_password}[m[33m"[m [35m--no-check-certificate[m | [33mgrep[m fullcoo[7;1Hunt | [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m
-[1m[34m~                                                                                                                                                                       [9;1H~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [m[20;151H1,1[10CTout[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2,0-1[2;1H[?12l[?25h[?25l[20;151H3,1  [3;1H[?12l[?25h[?25l[20;151H4[4;1H[?12l[?25h[?25l[20;151H5,0-1[5;1H[?12l[?25h[?25l[20;151H6,1  [6;1H[?12l[?25h[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H6,1[10CTout[6;1H[?12l[?25h[?25l[20;151H5[5;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;153H2[6;2H[?12l[?25h[?25l[20;153H195[7;27H[?12l[?25h[?25l[20;155H4[7;26H[?12l[?25h[?25l[20;155H3[7;25H[?12l[?25h[?25l[20;155H2[7;24H[?12l[?25h[?25l[20;155H1[7;23H[?12l[?25h[?25l[20;155H0[7;22H[?12l[?25h[?25l[7;15H[31m[46m[[4C][m[20;151H[K[20;151H6,189[8CTout[7;21H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[31m[^0-9][m[20;155H7[7;19H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[31m[46m[[4C][m[20;151H[K[20;151H6,184[8CTout[7;16H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[31m[^0-9][m[20;155H2[7;14H[?12l[?25h[?25l[20;155H1[7;13H[?12l[?25h[?25l[20;155H0[7;12H[?12l[?25h[?25l[20;154H79[7;11H[?12l[?25h[?25l[20;155H8[7;10H[?12l[?25h[?25l[20;155H7[7;9H[?12l[?25h[?25l[20;155H6[7;8H[?12l[?25h[?25l[20;155H5[7;7H[?12l[?25h[?25l[20;155H4[7;6H[?12l[?25h[?25l[20;155H3[7;5H[?12l[?25h[?25li| [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m[20;155H4[7;6H[?12l[?25h[?25l[7;6H[K[8;1H| [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m[8;23H[K[20;151H7,1  [8;1H[?12l[?25h[?25l[7;6H| [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m
-[1m[34m~                                                                                                                                                                       [m[20;151H6,174[7;6H[?12l[?25h[?25l| [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m[7;27H[K[20;155H3[7;5H[?12l[?25h[?25l[7;5H[K[8;1H| [33msed[m [33m'[m[31ms/<[^0-9]*>//g[m[33m'[m[8;23H[K[20;151H7,1  [8;1H[?12l[?25h[?25l[34m#| sed 's/<[^0-9]*>//g'[m[20;153H2[8;2H[?12l[?25h[20;1H[K[8;1H[?25l[20;151H7,1[10CTout[8;1H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"gmail.sh" 7L, 265C écrit(s)
-[?1l>[?12l[?25h[?1049l[37m00:01:53 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mvim gmail.sh
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"gmail.sh" 7L, 265C[>c[1;1H[34m#!/bin/bash[m
-
-[36mgmail_login[m=jeremux.f
-[36mgmail_password[m=teg9td7gUTOPYXGP
-
-wget [35m-q[m [35m-O[m - https://mail.google.com/a/gmail.com/feed/atom [35m--http-user=${gmail_login}[m@gmail.com [35m--http-password=[m[33m"[m[35m${gmail_password}[m[33m"[m [35m--no-check-certificate[m | [33mgrep[m fullcoo[7;1Hunt
-[34m#| sed 's/<[^0-9]*>//g'[m
-[1m[34m~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [m[20;151H1,1[10CTout[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2,0-1[2;1H[?12l[?25h[?25l[20;151H3,1  [3;1H[?12l[?25h[?25l[20;151H4[4;1H[?12l[?25h[?25l[20;151H5,0-1[5;1H[?12l[?25h[?25l[20;151H6,1  [6;1H[?12l[?25h[?25l[20;151H7[8;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;154H72[7;4H[?12l[?25h[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H6,172[8CTout[7;4H[?12l[?25h[?25l[20;155H3[7;5H[?12l[?25h[?25l|[20;155H4[7;6H[?12l[?25h[?25l[20;155H5[7;7H[?12l[?25h[?25lg[20;155H6[7;8H[?12l[?25h[?25lr[20;155H7[7;9H[?12l[?25h[?25le[20;155H8[7;10H[?12l[?25h[?25l[33mgrep[m[20;155H9[7;11H[?12l[?25h[?25l[20;154H80[7;12H[?12l[?25h[?25l[33m"[m[31m 
-#| sed 's/<[^0-9]*>//g'[m[20;155H1[7;13H[?12l[?25h[?25l[31mf [m[20;155H2[7;14H[?12l[?25h[?25l[31mu [m[20;155H3[7;15H[?12l[?25h[?25l[31ml [m[20;155H4[7;16H[?12l[?25h[?25l[31ml [m[20;155H5[7;17H[?12l[?25h[?25l[31mc [m[20;155H6[7;18H[?12l[?25h[?25l[31mo [m[20;155H7[7;19H[?12l[?25h[?25l[31mu [m[20;155H8[7;20H[?12l[?25h[?25l[31mn [m[20;155H9[7;21H[?12l[?25h[?25l[31mt [m[20;154H90[7;22H[?12l[?25h[?25l[33m"[m
-[34m#| sed 's/<[^0-9]*>//g'[m[20;155H1[7;23H[?12l[?25h[20;1H[K[7;22H[?25l[20;151H6,190[8CTout[7;22H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"gmail.sh" 7L, 284C écrit(s)[122C6,190[8CTout[20;151H[K[20;151H6,190[8CTout[7;22H[?12l[?25h[?25l[20;154H89[7;21H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[20;155H7[7;19H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[20;155H4[7;16H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[20;155H2[7;14H[?12l[?25h[?25l[20;155H1[7;13H[?12l[?25h[?25l[20;154H  [6;1H[?12l[?25h[?25l[20;151H7[8;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;154H91[7;23H[?12l[?25h[?25l[20;155H0[7;22H[?12l[?25h[?25l[20;154H89[7;21H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[20;155H7[7;19H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[20;155H4[7;16H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[20;155H2[7;14H[?12l[?25h[?25l[20;155H1[7;13H[?12l[?25h[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H6,181[8CTout[7;13H[?12l[?25h[?25l[31m<fullcount[m[33m"[m[20;155H2[7;14H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[20;155H4[7;16H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H7[7;19H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[20;155H9[7;21H[?12l[?25h[?25l[20;154H90[7;22H[?12l[?25h[?25l[20;155H1[7;23H[?12l[?25h[?25l[31m>[m[33m"[m[20;155H2[7;24H[?12l[?25h[?25l[20;155H1[7;23H[?12l[?25h[?25l[20;155H0[7;22H[?12l[?25h[?25l[20;154H89[7;21H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[20;155H7[7;19H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[20;155H4[7;16H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[20;155H2[7;14H[?12l[?25h[?25l[20;155H1[7;13H[?12l[?25h[20;1H[K[7;12H[?25l[20;151H6,180[8CTout[7;12H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"gmail.sh" 7L, 286C écrit(s)
-[?1l>[?12l[?25h[?1049l[37m00:04:28 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mvim gmail.sh[8Pcd -vim .todocd[Kvim .todo[5Pcd -vim gmail.sh[Kvim gmail.sh
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"gmail.sh" 7L, 286C[>c[1;1H[34m#!/bin/bash[m
-
-[36mgmail_login[m=jeremux.f
-[36mgmail_password[m=teg9td7gUTOPYXGP
-
-wget [35m-q[m [35m-O[m - https://mail.google.com/a/gmail.com/feed/atom [35m--http-user=${gmail_login}[m@gmail.com [35m--http-password=[m[33m"[m[35m${gmail_password}[m[33m"[m [35m--no-check-certificate[m | [33mgrep[m fullcoo[7;1Hunt | [33mgrep[m [33m"[m[31m<fullcount>[m[33m"[m
-[34m#| sed 's/<[^0-9]*>//g'[m
-[1m[34m~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [m[20;151H1,1[10CTout[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2,0-1[2;1H[?12l[?25h[?25l[20;151H3,1  [3;1H[?12l[?25h[?25l[20;151H4[4;1H[?12l[?25h[?25l[20;151H5,0-1[5;1H[?12l[?25h[?25l[20;151H6,1  [6;1H[?12l[?25h[?25l[20;151H7[8;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;154H93[7;25H[?12l[?25h[?25l[20;155H2[7;24H[?12l[?25h[?25l[20;155H1[7;23H[?12l[?25h[?25l[20;155H0[7;22H[?12l[?25h[?25l[20;154H89[7;21H[?12l[?25h[?25l[20;155H8[7;20H[?12l[?25h[?25l[20;155H7[7;19H[?12l[?25h[?25l[20;155H6[7;18H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l[20;155H4[7;16H[?12l[?25h[?25l[20;155H3[7;15H[?12l[?25h[?25l[20;155H2[7;14H[?12l[?25h[?25l[20;155H1[7;13H[?12l[?25h[?25l[20;155H0[7;12H[?12l[?25h[?25l[20;154H79[7;11H[?12l[?25h[?25l[20;155H8[7;10H[?12l[?25h[?25l[20;155H7[7;9H[?12l[?25h[?25l[20;155H6[7;8H[?12l[?25h[?25l[20;155H5[7;7H[?12l[?25h[?25l[33m"[m[31m<fullcount>[m[33m"[m [7;21H[K[7;7H[?12l[?25h[?25lfullcount[33m>"[m[31m [m[7;19H[K[8;1H[31m#| sed 's/<[^0-9]*>//g'[7;7H[?12l[?25h[?25l[m[33m>"[m[31m [m[7;10H[K[7;7H[?12l[?25h[?25l[7;7H[K[8;1H[34m#| sed 's/<[^0-9]*>//g'[m[20;155H4[7;6H[?12l[?25h[?25l[20;1H[1m-- INSERTION --[m[20;16H[K[20;151H6,174[8CTout[7;6H[?12l[?25h[?25l[20;155H5[7;7H[?12l[?25h[?25lc[20;155H6[7;8H[?12l[?25h[?25lu[20;155H7[7;9H[?12l[?25h[?25lt[20;155H8[7;10H[?12l[?25h[?25l[20;155H9[7;11H[?12l[?25h[?25l-[20;154H80[7;12H[?12l[?25h[?25l[35m-d[m[20;155H1[7;13H[?12l[?25h[?25l[33m'[m[31m 
-#| sed [m[33m'[ms/[33m<[[m^[31m0-9[m[33m][m*[33m>[m//g[33m'[m[20;155H2[7;14H[?12l[?25h[?25l[31m> [m[20;155H3[7;15H[?12l[?25h[?25l[33m'[m
-[34m#| sed 's/<[^0-9]*>//g'[m[20;155H4[7;16H[?12l[?25h[?25l[20;155H5[7;17H[?12l[?25h[?25l-[20;155H6[7;18H[?12l[?25h[?25l[35m-f[m[20;155H7[7;19H[?12l[?25h[?25l[35m8[m[20;155H8[7;20H[?12l[?25h[?25l[20;155H9[7;21H[?12l[?25h[?25l|[20;154H90[7;22H[?12l[?25h[?25l[20;155H1[7;23H[?12l[?25h[?25lc[20;155H2[7;24H[?12l[?25h[?25lu[20;155H3[7;25H[?12l[?25h[?25lt[20;155H4[7;26H[?12l[?25h[?25l[20;155H5[7;27H[?12l[?25h[?25l-[20;155H6[7;28H[?12l[?25h[?25l[35m-d[m[20;155H7[7;29H[?12l[?25h[?25l[33m'[m[31m 
-#| sed [m[33m'[ms/[33m<[[m^[31m0-9[m[33m][m*[33m>[m//g[33m'[m[20;155H8[7;30H[?12l[?25h[?25l[31m> [m[20;155H9[7;31H[?12l[?25h[?25l[31m [m[7;31H[K[20;155H8[7;30H[?12l[?25h[?25l[31m< [m[20;155H9[7;31H[?12l[?25h[?25l[33m'[m
-[34m#| sed 's/<[^0-9]*>//g'[m[20;153H200[7;32H[?12l[?25h[?25l[20;155H1[7;33H[?12l[?25h[?25l-[20;155H2[7;34H[?12l[?25h[?25l[35m-f[m[20;155H3[7;35H[?12l[?25h[?25l[35m1[m[20;155H4[7;36H[?12l[?25h[?25l:[20;155H5[7;37H[?12l[?25h[?25lw[20;155H6[7;38H[?12l[?25h[?25l[8;19r[8;1H[L[1;20r[20;151H[K[20;151H7,1[10CTout[8;1H[?12l[?25h[?25l[6;19r[19;1H
-[1;20r[6;1Hwget [35m-q[m [35m-O[m - https://mail.google.com/a/gmail.com/feed/atom [35m--http-user=${gmail_login}[m@gmail.com [35m--http-password=[m[33m"[m[35m${gmail_password}[m[33m"[m [35m--no-check-certificate[m | [33mgrep[m fullcoo[7;1Hunt | cut [35m-d[m[33m'[m[31m>[m[33m'[m [35m-f8[m | cut [35m-d[m[33m'[m[31m<[m[33m'[m [35m-f1[m:w[19;1H[1m[34m~                                                                                                                                                                       [m[20;151H[K[20;151H6,206[8CTout[7;38H[?12l[?25h[?25l [20;155H5[7;37H[?12l[?25h[?25l [20;155H4[7;36H[?12l[?25h[20;1H[K[7;35H[?25l[20;151H6,203[8CTout[7;35H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"gmail.sh" 7L, 297C écrit(s)[122C6,203[8CTout[20;151H[K[20;151H6,203[8CTout[7;35H[?12l[?25h[?25l[?12l[?25h[?25l[20;1H[K[20;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"gmail.sh" 7L, 297C écrit(s)
-[?1l>[?12l[?25h[?1049l[37m00:09:51 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mvim conkyrc_[K[K[K[K[K[K[K[K[K[K[K[Kvim s[Kconkyrc_[K_bottom
-[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;20r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[20;1H"conkyrc_bottom" 33L, 1518C[>c[1;1Hout_to_console yes
-out_to_x no
-background yes
-update_interval 1
-total_run_times 0
-no_buffers yes
-
-default_color FFFFFF #blanc
-default_shade_color 333333
-default_outline_color black
-
-use_xft yes
-
-color0 EEEEEE #normal
-color1 B3B3B3 #gris
-color2 FDA53C #orange
-color3 E8DD9E #jaune
-color4 A6D4E0 #bleu
-color5 FFA500 #camel[20;151H1,1[10CHaut[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[20;151H2[2;1H[?12l[?25h[?25l[20;151H3[3;1H[?12l[?25h[?25l[20;151H4[4;1H[?12l[?25h[?25l[20;151H5[5;1H[?12l[?25h[?25l[20;151H6[6;1H[?12l[?25h[?25l[20;151H7,0-1[7;1H[?12l[?25h[?25l[20;151H8,1  [8;1H[?12l[?25h[?25l[20;151H9[9;1H[?12l[?25h[?25l[20;151H10,1[10;1H[?12l[?25h[?25l[20;152H1,0-1[11;1H[?12l[?25h[?25l[20;152H2,1  [12;1H[?12l[?25h[?25l[20;152H3,0-1[13;1H[?12l[?25h[?25l[20;152H4,1  [14;1H[?12l[?25h[?25l[20;152H5[15;1H[?12l[?25h[?25l[20;152H6[16;1H[?12l[?25h[?25l[20;152H7[17;1H[?12l[?25h[?25l[20;152H8[18;1H[?12l[?25h[?25l[20;152H9[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor6 BDE077 #vert[20;1H[K[20;151H20,1[11C7%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor7 D8ADFF #mauve[20;151H[K[20;151H21,1[10C14%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1Hcolor8 FF95D1 #rose[20;151H[K[20;151H22,1[10C21%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[20;151H[K[20;151H23,0-1[8C28%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[20;151H[K[20;151H24,1[10C35%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1HTEXT[20;151H[K[20;151H25,1[10C42%[19;1H[?12l[?25h[?25l[1;19r[1;1H[2M[1;20r[18;1H^s[left;\#BBBBBB; ]^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/processeur-image.png] ^s[left;\#BBBBBB; CPU:]^s[left;\#FDA53C; ${cpu}%  ] ^g[left;80;10;${cpu};100[19;1H0;\#333333;\#FDA53C;ckycpu](1;spawn;urxvtc -e htop)\[20;151H[K[20;151H26,1[10C53%[18;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^s[left;\#444444; |]\[20;151H[K[20;151H27,1[10C60%[19;1H[?12l[?25h[?25l[1;19r[1;1H[2M[1;20r[18;1H^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/MemoryModule.png] ^s[left;\#BBBBBB; MEM:]  ^s[left;\#BDE077; $mem ]^s[left;\#444444;/$memmax]^s[left;\#BDE077;  $memm[19;1Hperc% ]^g[left;80;10;$memperc;100;\#333333;\#BDE077;ckymem](1;spawn;urxvtc -e htop)\[20;151H[K[20;151H28,1[10C68%[18;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^s[left;\#444444; |]\[20;151H[K[20;151H29,1[10C75%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[left;0;0;/home/jeremux/.config/wmfs/icons/status/icon-notes.png]^s[left;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/todo.sh }]\[20;151H[K[20;151H30,1[10C81%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/gmail.gif]^s[right;\#FDA53C; ${execi 60 /home/jeremux/.config/wmfs/scripts/gmail.sh }]^s[right;\#BBBBBB; ]\[20;151H[K[20;151H31,1[10C87%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/meteo.png]^s[right;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/meteo/meteo2.sh }]^s[right;\#BBBBBB; ]\[20;151H[K[20;151H32,1[10C93%[19;1H[?12l[?25h[?25l[1;19r[19;1H
-[1;20r[19;1H^i[right;0;0;/home/jeremux/.config/wmfs/icons/status/Battery_Half.png]^s[right;\#FDA53C; ${exec /home/jeremux/.config/wmfs/scripts/battery.sh }]\[20;151H[K[20;151H33,1[10CBas[19;1H[?12l[?25h[?25l[20;151H[K[20;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[20;1H[K[20;1H[?1l>[?12l[?25h[?1049l[37m00:13:52 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mmore battery.sh 
-#!/bin/sh
-acpi=`acpi`
-
-if echo "$acpi" | grep -q "until"; then
-	result=`acpi | cut -d' ' -f5 | cut -d':' -f2,3`
-	result=$result" until charged"
-else
-	result=`acpi | cut -d' ' -f5 | cut -d':' -f1,2`
-fi
-echo $result
-[37m00:13:54 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[macpi
-Battery 0: Full, 100%
-[37m00:14:08 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[m$acpi
-[37m00:14:15 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mecho $acpi"
-> ^C
-[37m00:14:22 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mecho $acpi""$acpi"
-
-[37m00:14:24 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mecho "$acpi"[Kacpi
-Battery 0: Discharging, 99%, 06:52:16 remaining
-[37m00:14:44 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mmore [K[K[K[K[Kacpi
-Battery 0: Full, 100%
-[37m00:14:59 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[m[K[37m00:14:59 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[m
-[37m00:18:18 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[m
-[37m00:18:19 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mlxapp[K[K[K[K[Ksudo apt-get install lxpa[K[Kappearance
-[sudo] password for jeremux: 
-Lecture des listes de paquets… 0%Lecture des listes de paquets… 100%Lecture des listes de paquets... Fait
-Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances       
-Lecture des informations d'état… 0%  Lecture des informations d'état… 0%Lecture des informations d'état... Fait
-Les NOUVEAUX paquets suivants seront installés :
-  lxappearance
-0 mis à jour, 1 nouvellement installés, 0 à enlever et 61 non mis à jour.
-Il est nécessaire de prendre 73,4 ko dans les archives.
-Après cette opération, 890 ko d'espace disque supplémentaires seront utilisés.
-0% [En cours]             Réception de : 1 http://archive.ubuntu.com/ubuntu/ trusty/universe lxappearance amd64 0.5.5-1 [73,4 kB]
-             4% [1 lxappearance 2 628 B/73,4 kB 4%]                                      100% [En cours]               73,4 ko réceptionnés en 0s (345 ko/s)
-Sélection du paquet lxappearance précédemment désélectionné.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 294272 fichiers et répertoires déjà installés.)
-Préparation du décompactage de .../lxappearance_0.5.5-1_amd64.deb ...
-Décompactage de lxappearance (0.5.5-1) ...
-Traitement déclenché pour  man-db (2.6.7.1-1) ...
-Traitement déclenché pour  gnome-menus (3.10.1-0ubuntu2) ...
-Traitement déclenché pour  desktop-file-utils (0.22-1ubuntu1) ...
-Traitement déclenché pour  mime-support (3.54ubuntu1) ...
-Paramétrage de lxappearance (0.5.5-1) ...
-[37m00:18:37 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[m[K[37m00:18:37 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[muname
-Linux
-[37m00:21:15 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[muname -a
-Linux notebook 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
-[37m00:21:17 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[muname -a[Kman uname
-[?1049h[?1h=UNAME(1)                                                                   User Commands                                                                   UNAME(1)[m
-[m
-[1mNAME[0m[m
-       uname - print system information[m
-[m
-[1mSYNOPSIS[0m[m
-       [1muname[0m [[4mOPTION[24m]...[m
-[m
-[1mDESCRIPTION[0m[m
-       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[m
-       [1m-a[0m, [1m--all[0m[m
-              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m if unknown:[m
-[m
-       [1m-s[0m, [1m--kernel-name[0m[m
-              print the kernel name[m
-[m
-       [1m-n[0m, [1m--nodename[0m[m
-              print the network node hostname[m
-[7m Manual page uname(1) line 1 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 2 (press h for help or q to quit)[27m[K[K       [1m-r[0m, [1m--kernel-release[0m[m
-[7m Manual page uname(1) line 5 (press h for help or q to quit)[27m[K[K              print the kernel release[m
-[7m Manual page uname(1) line 6 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 7 (press h for help or q to quit)[27m[K[K       [1m-v[0m, [1m--kernel-version[0m[m
-[7m Manual page uname(1) line 8 (press h for help or q to quit)[27m[K[K              print the kernel version[m
-[7m Manual page uname(1) line 9 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 10 (press h for help or q to quit)[27m[K[K       [1m-m[0m, [1m--machine[0m[m
-[7m Manual page uname(1) line 11 (press h for help or q to quit)[27m[K[K              print the machine hardware name[m
-[7m Manual page uname(1) line 12 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 13 (press h for help or q to quit)[27m[K[K       [1m-p[0m, [1m--processor[0m[m
-[7m Manual page uname(1) line 14 (press h for help or q to quit)[27m[K[K              print the processor type or "unknown"[m
-[7m Manual page uname(1) line 15 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 16 (press h for help or q to quit)[27m[K[K       [1m-i[0m, [1m--hardware-platform[0m[m
-[7m Manual page uname(1) line 17 (press h for help or q to quit)[27m[K[K              print the hardware platform or "unknown"[m
-[7m Manual page uname(1) line 18 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 19 (press h for help or q to quit)[27m[K[K       [1m-o[0m, [1m--operating-system[0m[m
-[7m Manual page uname(1) line 20 (press h for help or q to quit)[27m[K[K              print the operating system[m
-[7m Manual page uname(1) line 21 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 22 (press h for help or q to quit)[27m[K[K       [1m--help[0m display this help and exit[m
-[7m Manual page uname(1) line 23 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 24 (press h for help or q to quit)[27m[K[K       [1m--version[0m[m
-[7m Manual page uname(1) line 25 (press h for help or q to quit)[27m[K[K              output version information and exit[m
-[7m Manual page uname(1) line 26 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 27 (press h for help or q to quit)[27m[K[K[1mAUTHOR[0m[m
-[7m Manual page uname(1) line 28 (press h for help or q to quit)[27m[K[K       Written by David MacKenzie.[m
-[7m Manual page uname(1) line 29 (press h for help or q to quit)[27m[K[K[m
-[7m Manual page uname(1) line 30 (press h for help or q to quit)[27m[K[K[1mREPORTING[0m [1mBUGS[0m[m
-[7m Manual page uname(1) line 31 (press h for help or q to quit)[27m[K[K       Report uname bugs to bug-coreutils@gnu.org[m
-[7m Manual page uname(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print the machine hardware name[m
-[20;1H[K[7m Manual page uname(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-m[0m, [1m--machine[0m[m
-[20;1H[K[7m Manual page uname(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print the kernel version[m
-[20;1H[K[7m Manual page uname(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-v[0m, [1m--kernel-version[0m[m
-[20;1H[K[7m Manual page uname(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print the kernel release[m
-[20;1H[K[7m Manual page uname(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-r[0m, [1m--kernel-release[0m[m
-[20;1H[K[7m Manual page uname(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print the network node hostname[m
-[20;1H[K[7m Manual page uname(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-n[0m, [1m--nodename[0m[m
-[20;1H[K[7m Manual page uname(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print the kernel name[m
-[20;1H[K[7m Manual page uname(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m, [1m--kernel-name[0m[m
-[20;1H[K[7m Manual page uname(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m if unknown:[m
-[20;1H[K[7m Manual page uname(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-a[0m, [1m--all[0m[m
-[20;1H[K[7m Manual page uname(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[20;1H[K[7m Manual page uname(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
-[20;1H[K[7m Manual page uname(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1muname[0m [[4mOPTION[24m]...[m
-[20;1H[K[7m Manual page uname(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
-[20;1H[K[7m Manual page uname(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       uname - print system information[m
-[20;1H[K[7m Manual page uname(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
-[20;1H[K[7m Manual page uname(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[20;1H[K[7m Manual page uname(1) line 4 (press h for help or q to quit)[27m[K[H[2J[H[m
-[1mNAME[0m[m
-       uname - print system information[m
-[m
-[1mSYNOPSIS[0m[m
-       [1muname[0m [[4mOPTION[24m]...[m
-[m
-[1mDESCRIPTION[0m[m
-       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[m
-       [1m-a[0m, [1m--all[0m[m
-              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m[m  if unknown:[m
-[m
-       [1m-s[0m, [1m--kernel-name[0m[m
-              print the kernel name[m
-[m
-       [1m-n[0m, [1m--nodename[0m[m
-              print the network node hostname[m
-[7m Manual page uname(1) line 4 (press h for help or q to quit)[27m[K[H[2J[H[m
-[1mNAME[0m[m
-       uname - print system information[m
-[m
-[1mSYNOPSIS[0m[m
-       [1muname[0m [[4mOPTION[24m]...[m
-[m
-[1mDESCRIPTION[0m[m
-       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[m
-       [1m-a[0m, [1m--all[0m[m
-              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m if unknown:[m
-[m
-       [1m-s[0m, [1m--kernel-name[0m[m
-              print the kernel name[m
-[m
-       [1m-n[0m, [1m--nodename[0m[m
-              print the network node hostname[m
-[m
-[7m Manual page uname(1) line 4 (press h for help or q to quit)[27m[K[H[2J[H[m
-[1mNAME[0m[m
-       uname - print system information[m
-[m
-[1mSYNOPSIS[0m[m
-       [1muname[0m [[4mOPTION[24m]...[m
-[m
-[1mDESCRIPTION[0m[m
-       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[m
-       [1m-a[0m, [1m--all[0m[m
-              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m[m  if unknown:[m
-[m
-       [1m-s[0m, [1m--kernel-name[0m[m
-              print the kernel name[m
-[m
-       [1m-n[0m, [1m--nodename[0m[m
-              print the network node hostname[m
-[7m Manual page uname(1) line 4 (press h for help or q to quit)[27m[K[H[2J[H[m
-[1mNAME[0m[m
-       uname - print system information[m
-[m
-[1mSYNOPSIS[0m[m
-       [1muname[0m [[4mOPTION[24m]...[m
-[m
-[1mDESCRIPTION[0m[m
-       Print certain system information.  With no OPTION, same as [1m-s[0m.[m
-[m
-       [1m-a[0m, [1m--all[0m[m
-              print all information, in the following order, except omit [1m-p[0m and [1m-i[0m if unknown:[m
-[m
-       [1m-s[0m, [1m--kernel-name[0m[m
-              print the kernel name[m
-[m
-       [1m-n[0m, [1m--nodename[0m[m
-              print the network node hostname[m
-[m
-[7m Manual page uname(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m--kernel-release[0m[m
-[7m Manual page uname(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the kernel release[m
-[7m Manual page uname(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page uname(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m, [1m--kernel-version[0m[m
-[7m Manual page uname(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the kernel version[m
-[7m Manual page uname(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page uname(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-m[0m, [1m--machine[0m[m
-[7m Manual page uname(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the machine hardware name[m
-[7m Manual page uname(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page uname(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-p[0m, [1m--processor[0m[m
-[7m Manual page uname(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              print the processor type or "unknown"[m
-[7m Manual page uname(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page uname(1) line 16 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[37m00:43:01 [32m[[33mjeremux[31m[33m[32m][36m[scripts][34m$ (B[mcd
-[37m00:43:43 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;35m2014-08-05-202432_265x292_scrot.png[0m   [01;35m2014-08-20-192649_719x401_scrot.png[0m  7bfc5b181917737  [01;34mDocuments[0m                [01;34mEUtilities[0m  [01;34mModèles[0m   [01;34mpj-perso[0m         [01;34mtutorial[0m
-[01;35m2014-08-15-205355_896x629_scrot.png[0m   [01;35m2014-08-24-013321_187x267_scrot.png[0m  [01;34mBureau[0m           [01;34mdotfile[0m                  [01;34mHOWTO[0m       [01;34mMusique[0m   [01;34mPublic[0m           txt
-[01;35m2014-08-15-210344_566x583_scrot.png[0m   [01;35m2014-08-25-032917_459x434_scrot.png[0m  code             [01;34memacs_config-master[0m      [01;34mImages[0m      [01;34mperl5[0m     [01;34mTéléchargements[0m  [01;34mVidéos[0m
-[01;35m2014-08-16-025217_1366x768_scrot.png[0m  [01;35m2014-08-30-031257_418x302_scrot.png[0m  [01;34mcount__kmer[0m      [01;31memacs_config-master.zip[0m  [01;34mmitomer[0m     [01;34mPictures[0m  [01;34mtoto[0m
-[37m00:43:43 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mrm *png
-[37m00:43:53 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-7bfc5b181917737  code         [0m[01;34mDocuments[0m  [01;34memacs_config-master[0m      [01;34mEUtilities[0m  [01;34mImages[0m   [01;34mModèles[0m  [01;34mperl5[0m     [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[01;34mBureau[0m           [01;34mcount__kmer[0m  [01;34mdotfile[0m    [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m       [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m    [01;34mtoto[0m             txt
-[37m00:43:54 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-7bfc5b181917737  code         [0m[01;34mDocuments[0m  [01;34memacs_config-master[0m      [01;34mEUtilities[0m  [01;34mImages[0m   [01;34mModèles[0m  [01;34mperl5[0m     [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[01;34mBureau[0m           [01;34mcount__kmer[0m  [01;34mdotfile[0m    [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m       [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m    [01;34mtoto[0m             txt
-[37m00:43:56 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-7bfc5b181917737  code         [0m[01;34mDocuments[0m  [01;34memacs_config-master[0m      [01;34mEUtilities[0m  [01;34mImages[0m   [01;34mModèles[0m  [01;34mperl5[0m     [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[01;34mBureau[0m           [01;34mcount__kmer[0m  [01;34mdotfile[0m    [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m       [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m    [01;34mtoto[0m             txt
-[37m00:44:35 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mmore code
-8LIVNn?o+etL%s88
-[37m00:44:38 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mrm 7bfc5b181917737 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmore 7bfc5b181917737 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-
-
-<meta name="author" content="ImageBam.com"/>
-
-    <meta name="ROBOTS" content="NOINDEX, FOLLOW"/>
-    <meta name="GOOGLEBOT" content="NOINDEX, FOLLOW, NOARCHIVE"/>
-    
-
-<title>ImageBam</title>
-<style type="text/css">
-
-		body{background-color:#FFF;margin:0px;padding:0px;font-size:12px;color:#564b47;text-align:center;font-family:sans-serif}
-[7m--Plus--(1%)[27m                a{text-decoration:underline;color:#000}a:hover{color:#001;text-decoration:underline}
-[7m--Plus--(1%)[27m[K		fieldset{border:1px solid #BBB;margin-bottom:20px;padding:20px;margin-left:20px;margin-right:20px}
-[7m--Plus--(1%)[27m[K		legend{font-size:14px;font-weight:bold;color:#232323;padding-left:8px;padding-right:8px}
-[7m--Plus--(1%)[27m[K		.navthing{margin:7px;padding:3px;border:1px solid #0060CC;font-size:14px;text-decoration:none;background-color:#FFF;margin-bottom:3px;line-height:32px;c
-[7m--Plus--(1%)[27molor:#00235F}
-[7m--Plus--(1%)[27m[K		.navthing:hover{text-decoration:none;background-color:#E3EEFE}
-[7m--Plus--(2%)[27m[K		.header{text-center:left;width:263px;margin-left:5px;margin-top:3px;margin:auto}
-[7m--Plus--(2%)[27m[K		.gallery{border:1px dotted black;width:400px;margin:auto;padding:7px;margin-top:5px;}
-[7m--Plus--(2%)[27m                .gallery_desc{margin-top:10px;}
-[7m--Plus--(2%)[27m[K		.sharing{border:1px solid white;width:400px;margin:auto;padding:7px;text-align:left}
-[7m--Plus--(2%)[27m[K		.gallery_title{font-size:125%;font-weight:bold}.cursor{cursor:pointer}
-[7m--Plus--(2%)[27m[K		.buttonblue{background-color:#F7F9FB;border:1px solid #0048C5;  text-decoration:none;color:#0C4EA6; font-size:12px; padding:3px; display:block; float:ri
-[7m--Plus--(2%)[27mght; margin-left:1px; margin-right:1px;}
-[7m--Plus--(3%)[27m                .buttonblue img{
-[7m--Plus--(3%)[27m[K[37m00:44:49 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mrm 7bfc5b181917737 
-[37m00:44:50 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtoto[0m      txt
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[37m00:44:51 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mcd Documents/
-[37m00:44:54 [32m[[33mjeremux[31m[33m[32m][36m[Documents][34m$ (B[mls
-base.ods_0ods
-[37m00:44:55 [32m[[33mjeremux[31m[33m[32m][36m[Documents][34m$ (B[mcd ../Téléchargements/
-[37m00:44:57 [32m[[33mjeremux[31m[33m[32m][36m[Téléchargements][34m$ (B[mls
-10_07.ods  [0m[01;31mBio-EUtilities-1.73.tar.gz[0m  [01;34mBioPerl-1.6.901[0m  [01;31mBioPerl-1.6.901.tar.gz[0m  Compléments alimentaire pour maigrir.pdf  [01;31mgoogle-chrome-stable_current_amd64.deb[0m
-[37m00:44:58 [32m[[33mjeremux[31m[33m[32m][36m[Téléchargements][34m$ (B[mcd
-[37m00:45:03 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtoto[0m      txt
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[37m00:45:04 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mc Bureau/
-lc : commande introuvable
-[37m00:45:07 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtoto[0m      txt
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[37m00:45:07 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtoto[0m      txt
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  [01;34mtutorial[0m  [01;34mVidéos[0m
-[37m00:45:09 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mmore toto/
-
-*** toto/ : répertoire ***
-
-[37m00:45:15 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls toto/
-[0m[01;34mcpp[0m
-[37m00:45:18 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mrm toto/[K[K[K[K[K-rf toto/
-[37m00:45:24 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtutorial[0m  [01;34mVidéos[0m
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  txt
-[37m00:45:25 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mcd Téléchargements/
-[37m00:45:28 [32m[[33mjeremux[31m[33m[32m][36m[Téléchargements][34m$ (B[mls
-10_07.ods  [0m[01;31mBio-EUtilities-1.73.tar.gz[0m  [01;34mBioPerl-1.6.901[0m  [01;31mBioPerl-1.6.901.tar.gz[0m  Compléments alimentaire pour maigrir.pdf  [01;31mgoogle-chrome-stable_current_amd64.deb[0m
-[37m00:45:28 [32m[[33mjeremux[31m[33m[32m][36m[Téléchargements][34m$ (B[mcd ..
-[37m00:45:31 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mcount__kmer[0m  [01;34mdotfile[0m              [01;31memacs_config-master.zip[0m  [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtutorial[0m  [01;34mVidéos[0m
-code    [01;34mDocuments[0m    [01;34memacs_config-master[0m  [01;34mEUtilities[0m               [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  txt
-[37m00:45:31 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mr [Km -rf count__kmer/ EUtilities/ EUtilities/Bio-EUtilities-1.73/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KBureau/
-1-multiobjectif.pdf                                               My_53dcb4fc41e99.pdf
-20140731_225955.jpg                                               org/
-20140801_130958.jpg                                               plugin.properties
-about_files/                                                      secret.jpg
-about.html                                                        sem_4_grade_2.doc
-bank/                                                             sources/
- bank/                                                            SVL.zip
-bankTest/                                                         Telechargement-Cours Systeme Unix Avance.pdf
- bankTest/                                                        Telechargement-coursxml-fc-xslt-bleu.zip
-barbe1.jpg                                                        Telechargement-formulaires-access.pdf
-best.randomAB100.tsp                                              Telechargement-programmation_cpp.zip
-cedet-1.1.tar.gz                                                  Telechargement-Stat_biopuces.zip
-dagoma.fr - offre de stage.pdf                                    test.html
-devoir physique.zip                                               test.R
-emacs24-starter-kit-master/                                       The.Fappening.zip
-emacs24-starter-kit-master.zip                                    tp1.zip
-gstreamer0.10-plugins-ugly-multiverse_0.10.14-0ubuntu1_amd64.deb  travail3.jpg
-heli.jpg                                                          webcamstudio_0.56_all.deb
-junit/                                                            WebMindexer_v2.10.rar
---More--[K[37m00:45:31 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mrm -rf count__kmer/ EUtilities/ Bureau/*avi
-[37m00:45:52 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls
-[0m[01;34mBureau[0m  [01;34mDocuments[0m  [01;34memacs_config-master[0m      [01;34mHOWTO[0m   [01;34mmitomer[0m  [01;34mMusique[0m  [01;34mPictures[0m  [01;34mPublic[0m           [01;34mtutorial[0m  [01;34mVidéos[0m
-code    [01;34mdotfile[0m    [01;31memacs_config-master.zip[0m  [01;34mImages[0m  [01;34mModèles[0m  [01;34mperl5[0m    [01;34mpj-perso[0m  [01;34mTéléchargements[0m  txt
-[37m00:45:55 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mls Bureau/
-1-multiobjectif.pdf             [0m[01;31memacs24-starter-kit-master.zip[0m                                    [01;31mTelechargement-coursxml-fc-xslt-bleu.zip[0m
-[01;35m20140731_225955.jpg[0m             [01;31mgstreamer0.10-plugins-ugly-multiverse_0.10.14-0ubuntu1_amd64.deb[0m  Telechargement-formulaires-access.pdf
-[01;35m20140801_130958.jpg[0m             [01;35mheli.jpg[0m                                                          [01;31mTelechargement-programmation_cpp.zip[0m
-[01;34mabout_files[0m                     [01;34mjunit[0m                                                             [01;31mTelechargement-Stat_biopuces.zip[0m
-about.html                      Ketogains Calculator Reddit v1.9.xls                              test.html
-[01;34mbank[0m                            LICENSE.txt                                                       test.R
-[01;34m bank[0m                           [01;34mMETA-INF[0m                                                          [01;31mThe.Fappening.zip[0m
-[01;34mbankTest[0m                        My_53dcb4fc41e99.pdf                                              [01;31mtp1.zip[0m
-[01;34m bankTest[0m                       [01;34morg[0m                                                               [01;35mtravail3.jpg[0m
-[01;35mbarbe1.jpg[0m                      plugin.properties                                                 [01;31mwebcamstudio_0.56_all.deb[0m
-best.randomAB100.tsp            [01;35msecret.jpg[0m                                                        [01;31mWebMindexer_v2.10.rar[0m
-[01;31mcedet-1.1.tar.gz[0m                sem_4_grade_2.doc                                                 [01;31mwiktionary-all-titles-09052014.txt.gz[0m
-dagoma.fr - offre de stage.pdf  [01;34msources[0m                                                           [01;34mwmfs[0m
-[01;31mdevoir physique.zip[0m             [01;31mSVL.zip[0m
-[01;34memacs24-starter-kit-master[0m      Telechargement-Cours Systeme Unix Avance.pdf
-[37m00:45:57 [32m[[33mjeremux[31m[33m[32m][36m[~][34m$ (B[mhtop
-[?1049h[1;20r(B[m[4l[?7h[?1h=[?25l[39;49m[?1000h[39;49m(B[m[H[2J[2d  [36m1  [39m(B[0;1m[(B[0m[32m||||||||||||||||||||||[31m|||||(B[0;1m[30m[42X[2;76H35.3%[39m](B[m     [36mTasks: (B[0;1m[36m110(B[0m[36m, (B[0;1m[36m304(B[0m[36m thr; (B[0;1m[32m1(B[0m[36m running[3;3H2  [39m(B[0;1m[(B[0m[32m|||||||||||||||||||||||||||[31m|||||||||(B[0;1m[30m[33X[3;76H47.1%[39m](B[m     [36mLoad average: (B[0;1m[30m1.03 [39m(B[m0.77 (B[0;1m0.71 [4;3H(B[0m[36m3  [39m(B[0;1m[(B[0m[32m|||||||||||||||||||[31m||||||||||||||||||||||||(B[0;1m[30m[26X[4;76H56.2%[39m](B[m     [36mUptime: (B[0;1m[36m1 day, 08:36:12[5;3H(B[0m[36m4  [39m(B[0;1m[(B[0m[32m||||||||||||||[31m|||||||||(B[0;1m[30m[46X[5;76H29.4%[39m][6;3H(B[0m[36mMem[39m(B[0;1m[(B[0m[32m||||||||||||||||||||[34m|||[33m|||||||||||||(B[0;1m[30m[27X[6;70H2081/7929MB[39m][7;3H(B[0m[36mSwp[39m(B[0;1m[(B[0m[31m|(B[0;1m[30m[64X[7;72H23/9534MB[39m][9d(B[0m[30m[42m  PID USER      PRI  NI  VIRT   RES   SHR S [30m[46mCPU% [30m[42mMEM%   TIME+  Command[K[10d[30m[46m  985 jeremux    20   0  903M  228M 30096 S 51.4  2.9  0:17.05 /opt/google/chrome/chrome --type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[11;2H[39;49m(B[m1332 jeremux    20   0 [36m26[39m(B[m168 [36m 2[39m(B[m296 [36m 1[39m(B[m308 [32mR [39m(B[m51.4  0.0  0:00.12 htop[12d 6321 jeremux    20   0 [36m1013M  157M 61[39m(B[m332 S 40.0  2.0  5:07.61 /opt/google/chrome/chrome[13d 1188 jeremux    20   0 [36m 903M  228M 30[39m(B[m096 S 22.9  2.9  0:02.08 /opt/google/chrome/chrome --type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[14;2H1189 jeremux    20   0 [36m 903M  228M 30[39m(B[m096 S 17.1  2.9  0:02.10 /opt/google/chrome/chrome --type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[15;2H6376 jeremux    20   0 [36m1013M  157M 61[39m(B[m332 S 11.4  2.0  0:55.71 /opt/google/chrome/chrome[16d 6379 jeremux    20   0 [36m 794M  204M 86[39m(B[m700 S 11.4  2.6  1:27.37 /opt/google/chrome/chrome --type=gpu-process --channel=6321.0.1380494388 --supports-dual-gpus=false --gpu[17;2H6437 jeremux    20   0 [36m 705M 60[39m(B[m616 [36m17[39m(B[m928 S 11.4  0.7  1:25.14 /opt/google/chrome/chrome --type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[18;2H4005 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 258M 30[39m(B[m948 [36m20[39m(B[m048 S  5.7  0.4  2:57.55 /usr/bin/X :0 -audit 0 -auth /var/lib/mdm/:0.Xauth -nolisten tcp vt7[19d 6394 jeremux    20   0 [36m1013M  157M 61[39m(B[m332 S  5.7  2.0  0:04.33 /opt/google/chrome/chrome[20dF1[30m[46mHelp  [39;49m(B[mF2[30m[46mSetup [39;49m(B[mF3[30m[46mSearch[39;49m(B[mF4[30m[46mFilter[39;49m(B[mF5[30m[46mTree  [39;49m(B[mF6[30m[46mSortBy[39;49m(B[mF7[30m[46mNice -[39;49m(B[mF8[30m[46mNice +[39;49m(B[mF9[30m[46mKill  [39;49m(B[mF10[30m[46mQuit[K[H[39;49m(B[m[2;26H[31m|||||||(B[0;1m[30m [2;77H3[2;95H[36m09[2;108H[32m3[3;27H(B[0m[31m||||||||||(B[0;1m[30m      [3;76H39.0[4;26H(B[0m[32m|||[31m|||||(B[0;1m[30m[16X[4;76H34.8[4;109H[36m4[5;21H(B[0m[32m||||[31m|||||||[5;76H(B[0;1m[30m32.3[6;73H2[10;33H(B[0m[30m[46m31M 30460 S 56.6[10;61H92[11;2H[39;49m(B[m6321[11;25H[36m1013M  157M 61[39m(B[m544 S 38.4  2.0  5:08.19 /opt/google/chrome/chrome[12d 1188[12;25H[36m 903M  231M 30[39m(B[m460 S 18.9  2.9  0:02.37[12;90H--type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[13;5H9[13;33H[36m31M 30[39m(B[m460 S 17.6[13;61H37[14d 637[14;26H[36m794M  204M 86[39m(B[m296 [32mR [39m(B[m16.9  2.6  1:27.62[14;97Hgpu-process --channel=6321.0.1380494388 --supports-dual-gpus=false --gpu[15;39H544 [32mR [39m(B[m16.3[15;61H96[16;4H94[16;25H[36m1013M  157M 61[39m(B[m544 S 10[53G0  0:04.49[16;89H[K[17d 4005 (B[0;1m[30mroot      [17;26H(B[0m[36m258M 30[39m(B[m948 [36m20[39m(B[m048 S  5.9  0.4  2:57.64 /usr/bin/X :0 -audit 0 -auth /var/lib/mdm/:0.Xauth -nolisten tcp vt7[K[18d  997 jeremux   [18;26H[36m903M  231M 30[39m(B[m460[48G9  2.9  0:01.23 /opt/google/chrome/chrome --type=renderer --lang=fr --force-fieldtrials=ChromeSuggestions/Most Likely wit[19;2H195[19;18H 9 [31m-11 [36m 425M  4[39m(B[m840 [36m 3[39m(B[m048[48G2  0.1 33:50.10 /usr/bin/pulseaudio --start --log-target=syslog[H[20d[J[?12l[?25h[?1000l[20;1H[?1049l[?1l>[37m00:48:40 [32m[[33mjeremux[31m[33m[32m][3
