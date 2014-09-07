@@ -1,0 +1,33 @@
+out_to_console yes
+out_to_x no
+background yes
+update_interval 1
+total_run_times 0
+no_buffers yes
+
+default_color FFFFFF #blanc
+default_shade_color 333333
+default_outline_color black
+
+use_xft yes
+
+color0 EEEEEE #normal
+color1 B3B3B3 #gris
+color2 FDA53C #orange
+color3 E8DD9E #jaune
+color4 A6D4E0 #bleu
+color5 FFA500 #camel
+color6 BDE077 #vert
+color7 D8ADFF #mauve
+color8 FF95D1 #rose
+
+ 
+TEXT
+^s[left;\#BBBBBB; ]^i[left;0;0;$HOME/.config/wmfs/icons/status/processeur-image.png] ^s[left;\#BBBBBB; CPU:]^s[left;\#FDA53C; ${cpu}%  ] ^g[left;80;10;${cpu};100;\#333333;\#FDA53C;ckycpu](1;spawn;urxvtc -e htop)\
+^s[left;\#444444; |]\
+^i[left;0;0;$HOME/.config/wmfs/icons/status/MemoryModule.png] ^s[left;\#BBBBBB; MEM:]  ^s[left;\#BDE077; $mem ]^s[left;\#444444;/$memmax]^s[left;\#BDE077;  $memperc% ]^g[left;80;10;$memperc;100;\#333333;\#BDE077;ckymem](1;spawn;urxvtc -e htop)\
+^s[left;\#444444; |]\
+^i[left;0;0;$HOME/.config/wmfs/icons/status/icon-notes.png]^s[left;\#FDA53C; ${exec $HOME/.config/wmfs/scripts/todo.sh }]\
+^i[right;0;0;$HOME/.config/wmfs/icons/status/gmail.gif]^s[right;\#FDA53C; ${execi 60 $HOME/.config/wmfs/scripts/gmail.sh }]^s[right;\#BBBBBB; ]\
+^i[right;0;0;$HOME/.config/wmfs/icons/status/meteo.png]^s[right;\#FDA53C; ${exec $HOME/.config/wmfs/scripts/meteo/meteo2.sh }]^s[right;\#BBBBBB; ]\
+^i[right;0;0;$HOME/.config/wmfs/icons/status/Battery_Half.png]^s[right;\#FDA53C; ${exec $HOME/.config/wmfs/scripts/battery.sh }]\
