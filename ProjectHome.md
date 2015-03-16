@@ -1,0 +1,1 @@
+config for wmfs on debian
